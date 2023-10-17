@@ -1,0 +1,95 @@
+import { injectQuery as __vite__injectQuery } from "/@vite/client";import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/GameGrid.tsx");import { Fragment, jsxDEV } from "/@id/__x00__react/jsx-dev-runtime";
+import RefreshRuntime from "/@react-refresh";
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot) {
+  if (!window.__vite_plugin_react_preamble_installed__) {
+    throw new Error("@vitejs/plugin-react can't detect preamble. Something is wrong. See https://github.com/vitejs/vite-plugin-react/pull/11#discussion_r430879201");
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = (type, id) => {
+    RefreshRuntime.register(type, "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx " + id);
+  };
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import { SimpleGrid, Text } from "/node_modules/.vite/deps/@chakra-ui_react.js?v=403ee260";
+import useGames from "/src/hooks/useGames.ts?t=1697540097087";
+import GameCard from "/src/components/GameCard.tsx?t=1697540473763";
+import GameCardContainer from "/src/components/GameCardContainer.tsx";
+import GameCardSkeleton from "/src/components/GameCardSkeleton.tsx?t=1697540459575";
+const GameGrid = () => {
+  _s();
+  const {
+    games,
+    error,
+    isLoading
+  } = useGames();
+  const skeletons = [1, 2, 3, 4, 5, 6];
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    error && /* @__PURE__ */ jsxDEV(Text, { children: error }, void 0, false, {
+      fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+      lineNumber: 16,
+      columnNumber: 17
+    }, this),
+    /* @__PURE__ */ jsxDEV(SimpleGrid, { columns: {
+      sm: 1,
+      md: 2,
+      lg: 3,
+      xl: 5
+    }, spacing: 10, padding: "10px", children: [
+      isLoading && skeletons.map((skeleton) => /* @__PURE__ */ jsxDEV(GameCardContainer, { children: /* @__PURE__ */ jsxDEV(GameCardSkeleton, {}, skeleton, false, {
+        fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+        lineNumber: 24,
+        columnNumber: 15
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+        lineNumber: 23,
+        columnNumber: 49
+      }, this)),
+      games.map((game) => /* @__PURE__ */ jsxDEV(GameCardContainer, { children: /* @__PURE__ */ jsxDEV(GameCard, { game }, game.id, false, {
+        fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+        lineNumber: 27,
+        columnNumber: 13
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+        lineNumber: 26,
+        columnNumber: 28
+      }, this))
+    ] }, void 0, true, {
+      fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+      lineNumber: 17,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx",
+    lineNumber: 15,
+    columnNumber: 10
+  }, this);
+};
+_s(GameGrid, "0Egovc4DxcUwdNaBW8EmT4tOZqM=", false, function() {
+  return [useGames];
+});
+_c = GameGrid;
+export default GameGrid;
+var _c;
+$RefreshReg$(_c, "GameGrid");
+if (import.meta.hot) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+  import(
+    /* @vite-ignore */
+    __vite__injectQuery(import.meta.url, 'import')).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/htivo/Desktop/projects/game-hub/src/components/GameGrid.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports)
+        return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate(currentExports, nextExports);
+      if (invalidateMessage)
+        import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBV0ksbUJBQ1ksY0FEWjs7Ozs7Ozs7Ozs7Ozs7OztBQVhKLFNBQVNBLFlBQVlDLFlBQVk7QUFDakMsT0FBT0MsY0FBYztBQUNyQixPQUFPQyxjQUFjO0FBQ3JCLE9BQU9DLHVCQUF1QjtBQUM5QixPQUFPQyxzQkFBc0I7QUFFN0IsTUFBTUMsV0FBV0EsTUFBTTtBQUFBQyxLQUFBO0FBQ3JCLFFBQU07QUFBQSxJQUFFQztBQUFBQSxJQUFPQztBQUFBQSxJQUFPQztBQUFBQSxFQUFVLElBQUlSLFNBQVM7QUFDN0MsUUFBTVMsWUFBWSxDQUFDLEdBQUcsR0FBRyxHQUFHLEdBQUcsR0FBRyxDQUFDO0FBRW5DLFNBQ0UsbUNBQ0dGO0FBQUFBLGFBQVMsdUJBQUMsUUFBTUEsbUJBQVA7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFhO0FBQUEsSUFDdkIsdUJBQUMsY0FDQyxTQUFTO0FBQUEsTUFBRUcsSUFBSTtBQUFBLE1BQUdDLElBQUk7QUFBQSxNQUFHQyxJQUFJO0FBQUEsTUFBR0MsSUFBSTtBQUFBLElBQUUsR0FDdEMsU0FBUyxJQUNULFNBQVEsUUFFUEw7QUFBQUEsbUJBQ0NDLFVBQVVLLElBQUtDLGNBQ2IsdUJBQUMscUJBQ0MsaUNBQUMsc0JBQXNCQSxVQUF2QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQWdDLEtBRGxDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFFQSxDQUNEO0FBQUEsTUFDRlQsTUFBTVEsSUFBS0UsVUFDVix1QkFBQyxxQkFDQyxpQ0FBQyxZQUF1QixRQUFUQSxLQUFLQyxJQUFwQjtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQW1DLEtBRHJDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFFQSxDQUNEO0FBQUEsU0FmSDtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBZ0JBO0FBQUEsT0FsQkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQW1CQTtBQUVKO0FBQUVaLEdBMUJJRCxVQUFRO0FBQUEsVUFDd0JKLFFBQVE7QUFBQTtBQUFBa0IsS0FEeENkO0FBNEJOLGVBQWVBO0FBQVMsSUFBQWM7QUFBQUMsYUFBQUQsSUFBQSIsIm5hbWVzIjpbIlNpbXBsZUdyaWQiLCJUZXh0IiwidXNlR2FtZXMiLCJHYW1lQ2FyZCIsIkdhbWVDYXJkQ29udGFpbmVyIiwiR2FtZUNhcmRTa2VsZXRvbiIsIkdhbWVHcmlkIiwiX3MiLCJnYW1lcyIsImVycm9yIiwiaXNMb2FkaW5nIiwic2tlbGV0b25zIiwic20iLCJtZCIsImxnIiwieGwiLCJtYXAiLCJza2VsZXRvbiIsImdhbWUiLCJpZCIsIl9jIiwiJFJlZnJlc2hSZWckIl0sInNvdXJjZXMiOlsiR2FtZUdyaWQudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNpbXBsZUdyaWQsIFRleHQgfSBmcm9tIFwiQGNoYWtyYS11aS9yZWFjdFwiO1xyXG5pbXBvcnQgdXNlR2FtZXMgZnJvbSBcIi4uL2hvb2tzL3VzZUdhbWVzXCI7XHJcbmltcG9ydCBHYW1lQ2FyZCBmcm9tIFwiLi9HYW1lQ2FyZFwiO1xyXG5pbXBvcnQgR2FtZUNhcmRDb250YWluZXIgZnJvbSBcIi4vR2FtZUNhcmRDb250YWluZXJcIjtcclxuaW1wb3J0IEdhbWVDYXJkU2tlbGV0b24gZnJvbSBcIi4vR2FtZUNhcmRTa2VsZXRvblwiO1xyXG5cclxuY29uc3QgR2FtZUdyaWQgPSAoKSA9PiB7XHJcbiAgY29uc3QgeyBnYW1lcywgZXJyb3IsIGlzTG9hZGluZyB9ID0gdXNlR2FtZXMoKTtcclxuICBjb25zdCBza2VsZXRvbnMgPSBbMSwgMiwgMywgNCwgNSwgNl07XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8PlxyXG4gICAgICB7ZXJyb3IgJiYgPFRleHQ+e2Vycm9yfTwvVGV4dD59XHJcbiAgICAgIDxTaW1wbGVHcmlkXHJcbiAgICAgICAgY29sdW1ucz17eyBzbTogMSwgbWQ6IDIsIGxnOiAzLCB4bDogNSB9fVxyXG4gICAgICAgIHNwYWNpbmc9ezEwfVxyXG4gICAgICAgIHBhZGRpbmc9XCIxMHB4XCJcclxuICAgICAgPlxyXG4gICAgICAgIHtpc0xvYWRpbmcgJiZcclxuICAgICAgICAgIHNrZWxldG9ucy5tYXAoKHNrZWxldG9uKSA9PiAoXHJcbiAgICAgICAgICAgIDxHYW1lQ2FyZENvbnRhaW5lcj5cclxuICAgICAgICAgICAgICA8R2FtZUNhcmRTa2VsZXRvbiBrZXk9e3NrZWxldG9ufSAvPlxyXG4gICAgICAgICAgICA8L0dhbWVDYXJkQ29udGFpbmVyPlxyXG4gICAgICAgICAgKSl9XHJcbiAgICAgICAge2dhbWVzLm1hcCgoZ2FtZSkgPT4gKFxyXG4gICAgICAgICAgPEdhbWVDYXJkQ29udGFpbmVyPlxyXG4gICAgICAgICAgICA8R2FtZUNhcmQga2V5PXtnYW1lLmlkfSBnYW1lPXtnYW1lfSAvPlxyXG4gICAgICAgICAgPC9HYW1lQ2FyZENvbnRhaW5lcj5cclxuICAgICAgICApKX1cclxuICAgICAgPC9TaW1wbGVHcmlkPlxyXG4gICAgPC8+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IEdhbWVHcmlkO1xyXG4iXSwiZmlsZSI6IkM6L1VzZXJzL2h0aXZvL0Rlc2t0b3AvcHJvamVjdHMvZ2FtZS1odWIvc3JjL2NvbXBvbmVudHMvR2FtZUdyaWQudHN4In0=
